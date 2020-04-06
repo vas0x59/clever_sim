@@ -12,7 +12,7 @@ git clone https://github.com/CopterExpress/clever.git
 
 cd clever
 cd clover 
-patch < CMakeLists.patch
+patch < ../../../../patches/CMakeLists.patch
 # END
 
 # DEP
