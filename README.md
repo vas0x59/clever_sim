@@ -8,5 +8,6 @@
 
 ### Запуск 
 ```bash
+source env.sh
 roslaunch run.launch 
 ```
