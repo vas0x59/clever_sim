@@ -2,5 +2,11 @@
 
 ### Установка 
 ```bash
+./install_dep.sh
 ./install.sh
+```
+
+### Запуск 
+```bash
+roslaunch run.launch 
 ```
