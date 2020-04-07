@@ -16,10 +16,10 @@
         <arg name="led" default="false"/>
         <arg name="rc" default="false"/>
     </include>
-    <!-- <arg name="direction_z" default="down"/> direction the camera points: down, up -->
-    <!-- <arg name="direction_y" default="backward"/> direction the camera cable points: backward, forward -->
+    <arg name="direction_z" default="down"/> direction the camera points: down, up
+    <arg name="direction_y" default="backward"/> direction the camera cable points: backward, forward
 
-    <!-- <node if="$(eval direction_z == 'down' and direction_y == 'backward')" pkg="tf2_ros" type="static_transform_publisher" name="main_camera_frame" args="0 0 -0.05 -1.5707963 0 3.1415926 base_link main_camera_optical"/> -->
+    <node  pkg="tf2_ros" type="static_transform_publisher" name="main_camera_frame" args="0 0 -0.05 -1.5707963 0 3.1415926 base_link main_camera_optical"/>
     <!-- <node if="$(eval direction_z == 'down' and direction_y == 'forward')" pkg="tf2_ros" type="static_transform_publisher" name="main_camera_frame" args="0 0 -0.05 1.5707963 0 3.1415926 base_link main_camera_optical"/>
     <node if="$(eval direction_z == 'up' and direction_y == 'backward')" pkg="tf2_ros" type="static_transform_publisher" name="main_camera_frame" args="0 0 0.05 1.5707963 0 0 base_link main_camera_optical"/>
     <node if="$(eval direction_z == 'up' and direction_y == 'forward')" pkg="tf2_ros" type="static_transform_publisher" name="main_camera_frame" args="0 0 0.05 -1.5707963 0 0 base_link main_camera_optical"/> -->
