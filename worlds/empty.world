@@ -12,7 +12,7 @@
     <include>
       <uri>model://asphalt_plane</uri>
     </include>
-<include>
+    <include>
       <uri>model://aruco_map_10_10</uri>
     </include>
     <physics name='default_physics' default='0' type='ode'>
