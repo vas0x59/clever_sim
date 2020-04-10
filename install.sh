@@ -32,11 +32,16 @@ cd ../
 
 ### PX4
 git clone https://github.com/CopterExpress/Firmware.git
+echo aaa $(pwd)
 cd ./Firmware
+echo aaa $(pwd)
 cd ./Tools/sitl_gazebo/include
+echo aaa $(pwd)
 patch < ../../../patches/gazebo_opticalflow_plugin.patch
+echo aaa $(pwd)
 cd ../../../
 DONT_RUN=1 make px4_sitl_default gazebo
+echo aaa $(pwd)
 cp -fRa ../models/iris ./Tools/sitl_gazebo/models
 cp -fRa ../models/aruco_map_10_10 ./Tools/sitl_gazebo/models
 cp -f ../worlds/empty.world ./Tools/sitl_gazebo/worlds
