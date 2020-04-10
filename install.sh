@@ -32,13 +32,14 @@ cd ../
 
 ### PX4
 git clone https://github.com/CopterExpress/Firmware.git
-echo aaa $(pwd)
+# echo aaa $(pwd)
 cd ./Firmware
-echo aaa $(pwd)
+git submodule update --init --recursive
+# echo aaa $(pwd)
 cd ./Tools/sitl_gazebo/include
-echo aaa $(pwd)
+# echo aaa $(pwd)
 patch < ../../../patches/gazebo_opticalflow_plugin.patch
-echo aaa $(pwd)
+# echo aaa $(pwd)
 cd ../../../
 DONT_RUN=1 make px4_sitl_default gazebo
 echo aaa $(pwd)
