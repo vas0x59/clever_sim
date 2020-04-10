@@ -32,8 +32,8 @@ cd ../
 
 ### PX4
 git clone https://github.com/CopterExpress/Firmware.git
-cd Firmware
-cd Tools/sitl_gazebo/include
+cd ./Firmware
+cd ./Tools/sitl_gazebo/include
 patch < ../../../patches/gazebo_opticalflow_plugin.patch
 cd ../../../
 DONT_RUN=1 make px4_sitl_default gazebo
