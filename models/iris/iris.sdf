@@ -571,7 +571,7 @@
     </plugin>
     <!-- </model>
   <model name='main_camera_optical'> -->
-
+<!-- 
     <link name='main_camera_optical'>
       <pose>0 0 -0.05 0 1.570796 0</pose>
       <inertial>
@@ -608,9 +608,6 @@
           </clip>
           <noise>
             <type>gaussian</type>
-            <!-- Noise is sampled independently per pixel on each frame.
-               That pixel's noise value is added to each of its color
-               channels, which at that point lie in the range [0,1]. -->
             <mean>0.0</mean>
             <stddev>0.007</stddev>
           </noise>
@@ -632,17 +629,23 @@
       </sensor>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
-    </link>
+    </link> -->
+    <include>
+      <uri>model://rpi_cam_pinhole</uri>
+      <!-- <uri>model://rpi_cam</uri> -->
+      <pose>0.0 0 -0.05 0 1.5707963 0</pose>
+      <!-- <pose>0.06 0 1.047 0 1.57 0</pose> -->
+    </include>
     <joint name="fpv_cam_joint" type="fixed">
-      <child>main_camera_optical</child>
+      <child>rpi_cam::cam_link</child>
       <parent>base_link</parent>
-      <axis>
+      <!-- <axis>
         <xyz>0 0 1</xyz>
         <limit>
           <upper>0</upper>
           <lower>0</lower>
         </limit>
-      </axis>
+      </axis> -->
     </joint>
   </model>
 </sdf>
