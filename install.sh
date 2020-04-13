@@ -38,7 +38,7 @@ git submodule update --init --recursive
 # echo aaa $(pwd)
 cd ./Tools/sitl_gazebo/include
 # echo aaa $(pwd)
-# patch < ../../../patches/gazebo_opticalflow_plugin.patch
+patch < ../../../patches/gazebo_opticalflow_plugin.patch
 # echo aaa $(pwd)
 cd ../../../
 DONT_RUN=1 make px4_sitl_default gazebo
