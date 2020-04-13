@@ -1,10 +1,11 @@
 --- gazebo_opticalflow_plugin_old.h	2020-04-11 00:00:15.890818000 +0700
 +++ gazebo_opticalflow_plugin.h	2020-04-11 00:25:22.661473583 +0700
-@@ -40,7 +40,7 @@
+@@ -40,7 +40,8 @@
  #include "flow_px4.hpp"
  
  #define DEFAULT_RATE 20
 -#define HAS_GYRO TRUE
++#define TRUE true
 +#define HAS_GYRO true
  
  using namespace cv;
