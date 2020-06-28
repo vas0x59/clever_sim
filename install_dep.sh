@@ -5,6 +5,7 @@ sudo apt-get install ros-melodic-gazebo-ros \
                      ros-melodic-gazebo-ros-pkgs \
                      ros-melodic-gazebo-msgs \
                      ros-melodic-geographic-msgs \
+                     ros-melodic-mavros-msgs \
                      libgstreamer1.0-dev \
                      libgeographic-dev \
                      geographiclib-tools \
