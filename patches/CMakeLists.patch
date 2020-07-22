@@ -31,8 +31,15 @@
  
 -add_dependencies(clover_led ${PROJECT_NAME}_generate_messages_cpp)
 +#add_dependencies(clover_led ${PROJECT_NAME}_generate_messages_cpp)
- 
- add_dependencies(shell ${PROJECT_NAME}_generate_messages_cpp)
+
+ target_link_libraries(shell ${catkin_LIBRARIES})
+
+ add_dependencies(simple_offboard ${PROJECT_NAME}_generate_messages_cpp)
+
+-add_dependencies(clover_led ${PROJECT_NAME}_generate_messages_cpp)
++#add_dependencies(clover_led ${PROJECT_NAME}_generate_messages_cpp)
+
+add_dependencies(shell ${PROJECT_NAME}_generate_messages_cpp)
  
 @@ -277,4 +277,4 @@
  if (CATKIN_ENABLE_TESTING)
