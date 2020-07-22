@@ -11,6 +11,9 @@ git clone https://github.com/CopterExpress/clever.git
 # Patching
 
 cd clever
+
+rm -rf clover_simulation/
+
 cd clover 
 
 ../../../../patch_clever.sh
